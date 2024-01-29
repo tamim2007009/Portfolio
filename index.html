@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-  <nav id="dekstp-nav">
+  <nav id="desktop-nav">
       <div class="logo">Tamim</div>
       <div>
             <ul class="nav-links">
@@ -21,6 +21,28 @@
             </ul>
       </div>
   </nav>
+
+<nav id="hamburger-nav">
+    <div class="logo">Tamim</div>
+    <div class="hamburger-menu">
+
+   <div class="hamburger-icon" onclick="toggleMenu()" >
+
+   <span></span>
+   <span></span>
+   <span></span>
+</div>
+  <div class="menu-links">
+    <li><a href="#About" onclick="toggleMenu()">About</a></li>
+    <li><a href="#Experience" onclick="toggleMenu()" >Experience</a></li>
+    <li><a href="#Project" onclick="toggleMenu() " >Project</a></li>
+    <li><a href="#Education" onclick="toggleMenu()">Education</a></li>
+    <li><a href="#Contact"onclick="toggleMenu()">Contact</a></li>
+  </div>
+
+    </div>
+
+</nav>
 
  
 <script src="script.js"></script>
