@@ -1,5 +1,6 @@
 body{
     text-align: center;
+   
 }
 div{
     height: 100px;
@@ -16,26 +17,31 @@ div{
  flex-wrap: wrap;
   align-items: center;
   align-content: center;
-  
+
 
 }
 #box1{
 
     background-color: aqua;
+    margin: 8px
 }
 #box2{
 
     background-color: pink;
+    margin: 8px;
 }
 #box3{
 
     background-color: indianred;
+    margin: 8px;
 }
 #box4{
 
     background-color: darkkhaki;
+    margin: 8px;
 }
 #box5{
 
     background-color: slateblue;
+    margin: 8px;
 }
