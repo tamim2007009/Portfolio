@@ -5,6 +5,14 @@
     margin: 0;
     padding: 0;
 }
+* {
+  /* outline: solid  1px red; Temporary for debugging */
+}
+
+html {
+  scroll-padding-top:  70px; /* Adjust the value based on the height of your header or any fixed elements */
+}
+
 body {
     font-family: "Poppins", sans-serif;
   }
@@ -88,7 +96,7 @@ a:hover {
   display: block;
   padding: 10px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: black;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
@@ -141,6 +149,9 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 80vh;
+  min-height:  500px; /* Ensure there's enough space for the content */
+
+
 }
 
 .section__pic-container {
@@ -290,6 +301,92 @@ section {
     margin: auto 0;
   }
 
+
+ /* TIMELINE SECTION */
+
+ #timeline,
+ .history-tl-container {
+   position: relative;
+   align-items: center;
+ }
+
+ .history-tl-container {
+   width: 50%;
+   align-items: center;
+   display: block;
+   gap: 2rem;
+   margin-top: 2rem;
+ }
+
+ .history-tl-container ul.timeline-ul {
+   margin: 20px 0;
+   padding: 0;
+   display: inline-block;
+
+ }
+
+ .history-tl-container ul.timeline-ul li {
+   list-style: none;
+   margin-left: 30rem;
+   min-height: 50px;
+   border-left: 1px dashed #86D6FF;
+   padding: 0 0 50px 30px;
+   position: relative;
+ }
+
+ .history-tl-container ul.timeline-ul li:last-child {
+   border-left: 0;
+ }
+
+ .history-tl-container ul.timeline-ul li::before {
+   position: absolute;
+   left: -18px;
+   top: -5px;
+   content: " ";
+   border: 8px solid rgba(255, 255, 255, 0.74);
+   border-radius: 500%;
+   background: #258CC7;
+   height: 20px;
+   width: 20px;
+   transition: all 500ms ease-in-out;
+
+ }
+
+ .history-tl-container ul.timeline-ul li:hover::before {
+   border-color: #258CC7;
+   transition: all 1000ms ease-in-out;
+ }
+
+ ul.timeline-ul li .item-detail {
+   color: rgba(0, 0, 0, 0.5);
+   font-size: 12px;
+ }
+
+ ul.li .timestamp {
+   color: #8D8D8D;
+   position: absolute;
+   width: 100px;
+   left: -50%;
+   text-align: right;
+   font-size: 12px;
+ }
+
+ .bottom-container {
+   position: relative;
+   right: -2.5rem;
+   bottom: 2.5rem;
+ }
+
+ .time {
+   background: #258CC7;
+   display: inline-block;
+   color: white;
+   font-size: 15px;
+   width: auto;
+   white-space: nowrap;
+ }
+
+
   /* experience section */
 
   #experience {
@@ -385,7 +482,7 @@ section {
   }
   
   .contact-info-container p {
-    font-size: larger;
+    font-size: medium;
   }
   
   .contact-icon {

@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -101,3 +101,21 @@
     text-align: justify;
   }
 }
+
+    /* Timeline */
+
+    .history-tl-container ul.timeline-ul li {
+      margin-left: 2rem;
+  }
+
+  .timestamp, .time {
+      font-size: 0.7rem;
+  }
+  
+  .history-tl-container ul.timeline-ul li::before{
+      border: 8px solid rgba(255, 255, 255, 0.74);
+      height: 12px;
+      width: 12px;
+      top: -2px;
+      left: -16px;
+  }
