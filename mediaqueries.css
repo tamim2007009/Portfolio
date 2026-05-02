@@ -1,26 +1,29 @@
 @media screen and (max-width: 1200px) {
   #profile {
-    height: 83vh;
+    height: fit-content;
     margin-bottom: 6rem;
   }
   .about-containers {
     flex-wrap: wrap;
   }
   #contact,
-  #projects {
+  #projects,
+  #research,
+  #achievements,
+  #leadership {
     height: fit-content;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  #dekstop-nav {
+  #desktop-nav {
     display: none;
   }
   #hamburger-nav {
     display: flex;
   }
-  #experience,
-  .experience-details-container {
+  #education,
+  #skills {
     margin-top: 2rem;
   }
   #profile,
@@ -37,6 +40,9 @@
   section {
     margin: 0 5%;
   }
+  footer {
+    margin: 0 5%;
+  }
   .section__pic-container {
     width: 275px;
     height: 275px;
@@ -45,19 +51,26 @@
   .about-containers {
     margin-top: 0;
   }
+  .research-cards,
+  .achievements-list,
+  .leadership-list,
+  .about-containers.projects-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: fit-content;
   }
   #profile {
-    height: 83vh;
+    height: fit-content;
     margin-bottom: 0;
+    padding-top: 4vh;
   }
   article {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   footer nav {
     height: fit-content;
@@ -70,21 +83,24 @@
   }
   .contact-info-container {
     margin: 0;
+    flex: 1;
+    min-width: 150px;
   }
   .contact-info-container p,
   .nav-links li a {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .experience-sub-title {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
     text-align: center;
+    font-size: 0.9rem;
   }
   .section__pic-container {
     width: auto;
@@ -92,30 +108,94 @@
     justify-content: center;
   }
   .section__text__p2 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
   }
   .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .text-container {
     text-align: justify;
   }
+  .hero-intro {
+    font-size: 0.9rem;
+  }
+  .section__text__p1 {
+    font-size: 0.9rem;
+  }
+  section {
+    margin: 0 3%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  footer {
+    margin: 0 3%;
+  }
+  .btn-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .skill-card {
+    min-width: 100%;
+  }
+  .about-containers.projects-list {
+    grid-template-columns: 1fr;
+  }
+  .research-cards,
+  .achievements-list,
+  .leadership-list {
+    grid-template-columns: 1fr;
+  }
 }
 
-    /* Timeline */
+/* Timeline responsive fixes */
+.history-tl-container ul.timeline-ul li {
+  margin-left: 0;
+  padding-left: 40px;
+}
 
-    .history-tl-container ul.timeline-ul li {
-      margin-left: 2rem;
+@media screen and (max-width: 600px) {
+  .history-tl-container ul.timeline-ul li {
+    margin-left: 0;
+    padding-left: 30px;
+    width: 95%;
   }
 
-  .timestamp, .time {
-      font-size: 0.7rem;
+  .timestamp,
+  .time {
+    font-size: 0.85rem;
   }
   
-  .history-tl-container ul.timeline-ul li::before{
-      border: 8px solid rgba(255, 255, 255, 0.74);
-      height: 12px;
-      width: 12px;
-      top: -2px;
-      left: -16px;
+  .history-tl-container ul.timeline-ul li::before {
+    border: 2px solid rgba(255, 255, 255, 0.74);
+    height: 14px;
+    width: 14px;
+    top: 2px;
+    left: -10px;
   }
+  
+  .timestamp h3 {
+    font-size: 1rem;
+  }
+  
+  .timestamp h4 {
+    font-size: 0.85rem;
+  }
+}
+
+/* Project cards responsive */
+@media screen and (max-width: 768px) {
+  .about-containers.projects-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Skills section responsive */
+@media screen and (max-width: 768px) {
+  .about-containers.skill-card {
+    grid-template-columns: 1fr;
+  }
+}
