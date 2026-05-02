@@ -97,6 +97,7 @@ function renderProjects() {
 
   const projectsCardsHTML = portfolioData.projects.map(project => `
     <div class="details-container color-container project-card">
+      ${project.image ? `<div class="project-image-container"><img src="${project.image}" alt="${project.title}" class="project-image" onerror="this.style.display='none'" /></div>` : ''}
       <h2 class="project-title">${project.title}</h2>
       <p class="project-description">${project.description}</p>
       <div class="tech-tags">

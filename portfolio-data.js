@@ -77,6 +77,7 @@ const portfolioData = {
       title: "OMR Evaluation System",
       description: "Built an Optical Mark Recognition system using Python and OpenCV for automated exam sheet evaluation.",
       tech: ["Python", "OpenCV", "Computer Vision"],
+      image: "./assets/projects/omr-system.png",
       github: "https://github.com/",
       demo: "",
       category: "Computer Vision"
@@ -85,6 +86,7 @@ const portfolioData = {
       title: "Tactical Clash — AI Strategy Game",
       description: "Built a turn-based tactical game using Python and Pygame with real-time rendering and AI game logic.",
       tech: ["Python", "Pygame", "AI Game Logic"],
+      image: "./assets/projects/tactical-clash.png",
       github: "https://github.com/",
       demo: "",
       category: "Game Development"
@@ -93,6 +95,7 @@ const portfolioData = {
       title: "Online Bookstore",
       description: "Developed a full-stack e-commerce web application using Laravel and MySQL with modern web practices.",
       tech: ["PHP", "Laravel", "MySQL"],
+      image: "./assets/projects/bookstore.png",
       github: "https://github.com/",
       demo: "",
       category: "Web Development"
@@ -101,6 +104,7 @@ const portfolioData = {
       title: "Social Media App",
       description: "Built a feature-rich Android social media app using Firebase enabling real-time posts, stories, likes, comments, and user interaction.",
       tech: ["Android", "Java", "Firebase"],
+      image: "./assets/projects/social-media.png",
       github: "https://github.com/",
       demo: "",
       category: "Mobile App"
@@ -109,6 +113,7 @@ const portfolioData = {
       title: "Doctor Appointment Booking App",
       description: "Developed an Android healthcare application using Java and Firebase for real-time doctor discovery, appointment booking, and role-based user management.",
       tech: ["Android", "Java", "Firebase"],
+      image: "./assets/projects/doctor-app.png",
       github: "https://github.com/",
       demo: "",
       category: "Mobile App"
