@@ -6,7 +6,7 @@
 
 const portfolioData = {
   profile: {
-    name: "MD Raufiul Islam Tamim",
+    name: "MD Rauful Islam Tamim",
     title: "CSE Undergraduate | Competitive Programmer | Aspiring Researcher",
     intro: "Computer Science and Engineering student at KUET with strong interest in algorithms, machine learning, distributed systems, and privacy-preserving AI.",
     email: "tamim2007009@stud.kuet.ac.bd",
@@ -77,7 +77,7 @@ const portfolioData = {
       title: "OMR Evaluation System",
       description: "Built an Optical Mark Recognition system using Python and OpenCV for automated exam sheet evaluation.",
       tech: ["Python", "OpenCV", "Computer Vision"],
-      image: "./assets/projects/omr-system.png",
+      image: "./assets/project-2.png",
       github: "https://github.com/",
       demo: "",
       category: "Computer Vision"
@@ -86,7 +86,7 @@ const portfolioData = {
       title: "Tactical Clash — AI Strategy Game",
       description: "Built a turn-based tactical game using Python and Pygame with real-time rendering and AI game logic.",
       tech: ["Python", "Pygame", "AI Game Logic"],
-      image: "./assets/projects/tactical-clash.png",
+      image: "./assets/project-3.png",
       github: "https://github.com/",
       demo: "",
       category: "Game Development"
@@ -104,7 +104,7 @@ const portfolioData = {
       title: "Social Media App",
       description: "Built a feature-rich Android social media app using Firebase enabling real-time posts, stories, likes, comments, and user interaction.",
       tech: ["Android", "Java", "Firebase"],
-      image: "./assets/projects/social-media.png",
+      image: "./assets/android.jpg",
       github: "https://github.com/",
       demo: "",
       category: "Mobile App"
@@ -113,7 +113,7 @@ const portfolioData = {
       title: "Doctor Appointment Booking App",
       description: "Developed an Android healthcare application using Java and Firebase for real-time doctor discovery, appointment booking, and role-based user management.",
       tech: ["Android", "Java", "Firebase"],
-      image: "./assets/projects/doctor-app.png",
+      image: "./assets/android.jpg",
       github: "https://github.com/",
       demo: "",
       category: "Mobile App"
